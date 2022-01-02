@@ -1,5 +1,38 @@
-.App {
+#root{
   text-align: center;
+}
+
+html{
+  background-color:#95a5a6;
+}
+
+#root1{
+  background-color: #81ecec;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 500px;
+  margin-right:500px;
+  padding-top: 20px;
+  padding: auto;
+}
+
+.placing{
+  position: absolute;
+  top: 0;
+  right: 10px; 
+}
+
+.btn {
+  background-color: #3498db;
+  border: 1px solid black;
+  color: white;
+  padding: 15px 39px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 30px 2px;
+  cursor: pointer;
 }
 
 .App-logo {
