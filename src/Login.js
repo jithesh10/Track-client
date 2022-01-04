@@ -9,7 +9,7 @@ function Login(){
     const[password,setpassword]=useState('');
 
     const add = () =>{
-        Axios.post("http://localhost:3001/login",{
+        Axios.post("https://track-server-tau.vercel.app/login",{
             username:username,
             password:password
         }).then(function (response) {
