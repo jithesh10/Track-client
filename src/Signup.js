@@ -19,7 +19,7 @@ function Signup(){
             alert("Please Re-enter the password correctly");
         }
         else{
-            Axios.post("http://localhost:3001/signup",{
+            Axios.post("https://track-server-tau.vercel.app/signup",{
             username:username,
             password:password
             }).then(function (response) {
