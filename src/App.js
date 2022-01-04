@@ -12,8 +12,7 @@ function App(props) {
   const [hours,sethours]=useState('');
   const [project,setproject]=useState('');
   const [status,setstatus]=useState('');
-  
-  const url= https://track-server-tau.vercel.app/;
+
   useEffect(()=>{
     Axios.get("https://track-server-tau.vercel.app/read").then((res)=>{
       setprojectlist(res.data);
@@ -35,7 +34,7 @@ function App(props) {
       alert("Please select a status");
     else{
       alert("Updated Successfully.");
-      Axios.post("http://localhost:3001/add",{
+      Axios.post("https://track-server-tau.vercel.app/add",{
       project:project,
       hours:hours,
       status:status,
