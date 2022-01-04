@@ -12,16 +12,17 @@ function App(props) {
   const [hours,sethours]=useState('');
   const [project,setproject]=useState('');
   const [status,setstatus]=useState('');
-
+  
+  const url= https://track-server-tau.vercel.app/;
   useEffect(()=>{
-    Axios.get("http://localhost:3001/read").then((res)=>{
+    Axios.get("https://track-server-tau.vercel.app/read").then((res)=>{
       setprojectlist(res.data);
     })
   });
 
   const add=()=>{
     alert("Added Successfully.");
-    Axios.post("http://localhost:3001/insert",{
+    Axios.post("https://track-server-tau.vercel.app/insert",{
       title:title,
       description:description
     });
